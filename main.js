@@ -40,6 +40,9 @@ $("form").submit(function() {
       var yArray = intArray($('#secondArray'));
       var finalArray = addArrays(xArray, yArray);
     }
+    else {
+      finalArray = addArrays()
+    }
   $('#result').text(finalArray);
   return false;
 });
